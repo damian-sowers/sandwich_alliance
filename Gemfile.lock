@@ -31,14 +31,16 @@ GEM
     annotate (2.4.1.beta1)
     arel (3.0.2)
     bcrypt-ruby (3.0.1)
+    bootstrap-sass (2.2.2.0)
+      sass (~> 3.2)
     builder (3.0.4)
-    capybara (1.1.2)
+    capybara (2.0.2)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       selenium-webdriver (~> 2.0)
-      xpath (~> 0.1.4)
+      xpath (~> 1.0.0)
     childprocess (0.3.6)
       ffi (~> 1.0, >= 1.0.6)
     chosen-rails (0.9.11.2)
@@ -123,19 +125,17 @@ GEM
     rake (10.0.3)
     rdoc (3.12)
       json (~> 1.4)
-    rspec (2.9.0)
-      rspec-core (~> 2.9.0)
-      rspec-expectations (~> 2.9.0)
-      rspec-mocks (~> 2.9.0)
-    rspec-core (2.9.0)
-    rspec-expectations (2.9.1)
+    rspec-core (2.12.2)
+    rspec-expectations (2.12.1)
       diff-lcs (~> 1.1.3)
-    rspec-mocks (2.9.0)
-    rspec-rails (2.9.0)
+    rspec-mocks (2.12.1)
+    rspec-rails (2.12.0)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       railties (>= 3.0)
-      rspec (~> 2.9.0)
+      rspec-core (~> 2.12.0)
+      rspec-expectations (~> 2.12.0)
+      rspec-mocks (~> 2.12.0)
     rubyzip (0.9.9)
     sass (3.2.5)
     sass-rails (3.2.6)
@@ -170,7 +170,7 @@ GEM
     warden (1.2.1)
       rack (>= 1.0)
     websocket (1.0.6)
-    xpath (0.1.4)
+    xpath (1.0.0)
       nokogiri (~> 1.3)
 
 PLATFORMS
@@ -179,7 +179,8 @@ PLATFORMS
 DEPENDENCIES
   annotate (~> 2.4.1.beta)
   bcrypt-ruby (= 3.0.1)
-  capybara (= 1.1.2)
+  bootstrap-sass
+  capybara
   chosen-rails
   client_side_validations
   coffee-rails (~> 3.2.1)
@@ -191,7 +192,7 @@ DEPENDENCIES
   pry
   pry-remote
   rails (= 3.2.11)
-  rspec-rails (= 2.9.0)
+  rspec-rails (= 2.12.0)
   sass-rails (~> 3.2.3)
   sqlite3 (= 1.3.5)
   uglifier (>= 1.0.3)

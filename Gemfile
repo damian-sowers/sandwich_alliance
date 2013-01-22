@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 ruby '1.9.3'
 gem 'rails', '3.2.11'
+gem 'bootstrap-sass'
 gem 'bcrypt-ruby', '3.0.1'
 
 # Bundle edge Rails instead:
@@ -9,7 +10,7 @@ gem 'bcrypt-ruby', '3.0.1'
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
-  gem 'rspec-rails', '2.9.0'
+  gem 'rspec-rails', '2.12.0'
   gem 'annotate', '~> 2.4.1.beta'
   gem 'pry'
   gem 'pry-remote'
@@ -31,7 +32,7 @@ gem 'devise-async'
 gem 'client_side_validations'
 
 group :test do
-  gem 'capybara', '1.1.2'
+  gem 'capybara'
   gem 'factory_girl_rails', '1.4.0'
 end
 
