@@ -12,4 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
-
+//= require vendor/modernizr-2.6.1-respond-1.1.0.min
+//= require jquery.pagescroller.lite
+//= require jquery.flexslider-min
+//= require sequence.jquery-min
+//= require main
+//= require_tree .
