@@ -1,3 +1,4 @@
+
 // FLEX SLIDER - QUOTES
 $(window).load(function() {
     $('.flexslider2').flexslider({
@@ -69,4 +70,3 @@ $(document).ready(function(){
 	});
 				
 });
-  
