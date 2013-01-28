@@ -1,0 +1,30 @@
+<!-- START HEADER  -->
+<div class="header-container">
+  <header class="wrapper clearfix">
+    <div id="header" class="internal">
+      <%= render "shared/header" %>
+    </div>
+  </header>
+</div>
+
+<div class="main-container internal">
+  <div class="main wrapper clearfix section">
+  	<div class="circle_container">
+  		<div class="circle">User</div>
+  	</div>
+		<article style="margin-top:-40px">
+				<div class="well" style="background-color:#fff; margin-top:50px">
+					<div style="text-align:center">
+						<h2>Users</h2>
+						<span>Accounts listed below</span>
+					</div>
+					<hr>
+					<% @users.each do |f| %>
+						<%= link_to f.email, user_path(f) %><br/>
+					<% end %>
+				</div>
+		</article>
+	</div>         
+</div> 
+
+<%= render "shared/footer" %>

@@ -1,9 +1,11 @@
-<div class="masthead">
-  <ul class="nav nav-pills pull-right">
-  	<li class="active"><a href="#">Home</a></li>
-    <li><a href="#">Merchants</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-  <h3 class="muted">Sandwich Alliance</h3>
-</div>
+<a href="/" class="logo">Ruby Alliance</a>
+<ul class="menu" id="headnav">
+ <li><a href="/users/sign_up">Apply for Membership</a></li>
+ <li><a href="/merchants">Merchants</a></li>
+ <li><a href="/about">About</a></li>
+ <% if user_signed_in? %>
+ 	<li class="last"><%= link_to "Logout", destroy_user_session_path, :method => :delete %></li>
+ <% else %>
+	<li class="last"><a href="/users/sign_in">Login</a></li>
+ <% end %>
+</ul>

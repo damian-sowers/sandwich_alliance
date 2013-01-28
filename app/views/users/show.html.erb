@@ -1,0 +1,39 @@
+<!-- START HEADER  -->
+<div class="header-container">
+  <header class="wrapper clearfix">
+    <div id="header" class="internal">
+      <%= render "shared/header" %>
+    </div>
+  </header>
+</div>
+
+<div class="main-container internal">
+  <div class="main wrapper clearfix section">
+  	<div class="circle_container">
+  		<div class="circle">User</div>
+  	</div>
+		<article style="margin-top:-40px">
+				<div class="well" style="background-color:#fff; margin-top:50px">
+					<div style="text-align:center">
+						<h2>User Information</h2>
+						<span>Account details below</span>
+					</div>
+					<hr>
+					First Name: <%= @user.first_name %><br/>
+					Last Name: <%= @user.last_name %><br/>
+					Email: <%= @user.email %><br/>
+					Zip Code: <%= @user.zip %><br/>
+					Blurb: <%= @user.blurb %><br/>
+					Created at: <%= @user.created_at %><br/>
+					Sign in count: <%= @user.sign_in_count %><br/>
+					Approved? <%= @user.approved %><br/>
+					Administrator? <%= @user.administrator %><br/><br/>
+
+
+					<%= link_to "Edit User", edit_user_path(@user), class: "btn btn-warning" %>
+				</div>
+		</article>
+	</div>         
+</div> 
+
+<%= render "shared/footer" %>

@@ -1,34 +1,79 @@
-<div class="container-narrow">
+<!-- START HEADER  -->
+<div class="header-container">
+  <header class="wrapper clearfix">
+    <div id="header">
+      <%= render "shared/header" %>
 
-  <%= render 'shared/header' %>
+      <div class="prevNext">
+       <img class="prev" src="img/prev.png" alt="prev" />
+       <img class="next" src="img/next.png" alt="next" />
+      </div>
 
-  <hr>
+      <div id="sequence">
+        <ul>
+          <li>
+             <h2 class="title three">Get Special Treatment at Alliance Bars & Restaurants</h2>
+             <div class="subtitle three">
+               This means you will get the best seats in the house, free appetizers, stiffer drinks, etc...
+               <h5>Just need to be a person who represents the values of the alliance</h5>  
+                <a href="/users/sign_up" class="btn btn-success btn-large" style="margin-left:0;"><i class="icon-white icon-ok"></i> Apply for Membership: It's Free</a>
+            </div>
+            <%= image_tag "slide1.png", class: "slide three" %>
+          </li>
 
-  <div class="jumbotron">
-    <!-- <h1>Sandwich Alliance</h1>
-    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p> -->
-    <%= image_tag "tophat.jpg" %><br/>
-    <a class="btn btn-large btn-success" href="#">Join the Alliance</a>
-  </div>
+          <li>
+            <h2 class="title four">An Alliance of Great Service</h2>
+            <div class="subtitle four">Everbody can now enjoy the privelidged experience of extra attention and special offerings.
+             <h5>Apply Today</h5>
+             <a href="/users/sign_up" class="btn btn-success btn-large" style="margin-left:0;"><i class="icon-white icon-ok"></i> Apply for Membership: It's Free</a>
+            </div>           
+            <%= image_tag "slide2.png", class: "slide four" %>
+          </li>
+        </ul>
+      </div>
 
-  <hr>
+      <ul id="nav">
+       <li><span></span></li>
+       <li><span></span></li>
+      </ul>
+    </div> 
+  </header>
+</div>
 
-  <div class="row-fluid marketing">
-    <div class="span6">
-      <h4>Access Secret Menus</h4>
-      <p>Become an alliance member and get access to secret menus. Give the waiter your passphrase to order. e.g. "The crow flies at midnight."</p>
-    </div>
+<div class="main-container">
+  <div id="features" class="main wrapper clearfix section">
+    <article>
+      <section>
+        <%= image_tag "left-image.jpg" %>
+        <h2>Get the red carpet treatment</h2>                        
+        <p>All alliance merchants will give something special to alliance members.</p>
+      </section>
 
-    <div class="span6">
-      <h4>Level up for More Dishes</h4>
-      <p>Order food at any alliance restaurant and earn points. Level up for access to upper-tier secret dishes.</p>
-    </div>
-  </div>
+      <section>
+        <%= image_tag "middle-image.jpg" %>
+        <h2>Search for alliance merchants in your area.</h2>                        
+        <p>Our beta program is currently starting in the Lake Tahoe Region, but we'll be coming to the Bay Area soon.</p>
+      </section>
 
-  <hr>
+      <section class="last">
+        <%= image_tag "right-image.jpg" %>
+        <h2>Be a member of the elite</h2>                        
+        <p>A sandwich is the paragon of all things food. Join the alliance which embodies this perfection.</p>
+      </section>
+    </article> 
+  </div> 
 
-  <div class="footer">
-    <p>&copy; Sandwich Alliance 2013</p>
-  </div>
+  <div class="main wrapper clearfix">
+    <header>
+      <div class="flexslider2 quote">
+        <ul class="slides">
+         <li>“I go to restaurants for the experience. The alliance gaurantees me a good experience.”</li>
+         <li>“The chef came out and greeted us, and gave us a complimentary experimental appetizer!”</li>
+         <li>“The bartender made my drinks twice as strong as everybody else.”</li>
+        </ul>
+      </div>                   
+    </header>
+  </div>       
+</div> 
 
-</div> <!-- /container -->
+<%= render "shared/footer" %>

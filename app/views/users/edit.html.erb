@@ -1,0 +1,85 @@
+<!-- START HEADER  -->
+<div class="header-container">
+  <header class="wrapper clearfix">
+    <div id="header" class="internal">
+      <%= render "shared/header" %>
+    </div>
+  </header>
+</div>
+
+<div class="main-container internal">
+  <div class="main wrapper clearfix section">
+  	<div class="circle_container">
+  		<div class="circle">User</div>
+  	</div>
+		<article style="margin-top:-40px">
+				<div class="well" style="background-color:#fff; margin-top:50px">
+					<div style="text-align:center">
+				<h2>Edit this user</h2>
+				</div>
+				<hr>
+				<%= render 'shared/errors', :target => @user %>
+				<%= form_for(@user, :html => { :class => "form-horizontal" }) do |f| %>
+				  <div class="row">
+				  <div style="float:left; margin-left:30px; margin-right:30px;">
+				  <div class="control-group">
+				  	<%= f.label :first_name, class: "control-label required" %>
+				  	<div class="controls">
+				  		<%= f.text_field :first_name, class: "input-xlarge" %>
+				  	</div>
+				  </div>
+
+				  <div class="control-group">
+				  	<%= f.label :last_name, class: "control-label required" %>
+				  	<div class="controls">
+				  		<%= f.text_field :last_name, class: "input-xlarge" %>
+				  	</div>
+				  </div>
+
+				  <div class="control-group">
+				  	<%= f.label :email, class: "control-label required" %>
+				  	<div class="controls">
+				  		<%= f.email_field :email, class: "input-xlarge" %>
+				  	</div>
+				  </div>
+
+				  <div class="control-group">
+				  	<%= f.label :zip, "Zip code", class: "control-label required" %>
+				  	<div class="controls">
+				  		<%= f.text_field :zip, class: "input-xlarge" %>
+				  	</div>
+				  </div>
+
+				  <div class="control-group">
+						<%= f.label :blurb, "A little about you. Please include links to online profiles if you have them (e.g linkedin, personal blog, or other stuff that shows your character).", class: "control-label required" %>
+						<div class="controls">
+							<%= f.text_area :blurb, class: "input-xlarge", rows: 7 %>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<%= f.label :approved, "Application Approved?", class: "control-label required" %>
+						<div class="controls">
+							<%= f.text_field :approved, class: "input-xlarge" %>
+						</div>
+					</div>
+
+					<div class="control-group">
+						<%= f.label :administrator, "Administrator?", class: "control-label required" %>
+						<div class="controls">
+							<%= f.text_field :administrator, class: "input-xlarge" %>
+						</div>
+					</div>
+				</div>
+				</div>
+				<hr>
+				<br/><br/>
+				  <div><%= f.submit "Save Changes", class: "btn btn-info" %></div>
+				<% end %>
+			</div>
+			</div> 
+		</article>
+	</div>         
+</div> 
+
+<%= render "shared/footer" %>

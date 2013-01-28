@@ -1,0 +1,51 @@
+<!-- START HEADER  -->
+<div class="header-container">
+  <header class="wrapper clearfix">
+    <div id="header" class="internal">
+      <%= render "shared/header" %>
+    </div>
+  </header>
+</div>
+
+<div class="main-container internal">
+  <div class="main wrapper clearfix section">
+		<article style="margin-top:-40px">
+			<section>
+				
+				<h2>Apply to become a member of the alliance </h2>
+				<hr>
+				<%= form_for(@membership, :html => { :class => "form-horizontal" }, :validate => true) do |f| %>  <div class="control-group">
+						<%= f.label :name, "Name", class: "control-label required" %>
+						<div class="controls">
+							<%= f.text_field :name, class: "input-xlarge"  %>
+						</div>
+					</div>
+					<div class="control-group">
+						<%= f.label :email, "Email", class: "control-label required" %>
+						<div class="controls">
+							<%= f.email_field :email, class: "input-xlarge"  %>
+						</div>
+					</div>
+					<div class="control-group">
+						<%= f.label :blurb, "A little about you. Please include links to online profiles if you have them (e.g linkedin, personal blog, or other stuff that shows your character).", class: "control-label required" %>
+						<div class="controls">
+							<%= f.text_area :blurb, class: "input-xlarge"  %>
+						</div>
+					</div>
+					<span style="font-size:12px">We will only use this information internally to send you the occassional email (if your membership is accepted).</span>
+					<br/>
+					<hr>
+					<%= f.submit "Submit Application", class: "btn btn-info" %>
+				<% end %>
+			</section>
+			          
+			<aside>
+				<%= image_tag "left-image.jpg" %>
+				<span>First Postulate of the Alliance</span>
+				<p><em style="color:#666">"Do not make a stingy sandwich; Pile the cold cuts high. Customers should see salami coming through the rye."</em></p>
+			</aside>                  
+		</article>
+	</div>         
+</div> 
+
+<%= render "shared/footer" %>
