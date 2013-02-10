@@ -1,0 +1,50 @@
+.header-container
+  %header.wrapper.clearfix
+    #header.internal
+      = render 'shared/header'
+
+.main-container.internal
+  .main.wrapper.clearfix.section
+    .circle_container
+      .circle
+        About
+    %article.article_positioning
+      .well.inner_page_well
+        .align_center
+          %h1.page_title Why you should join the alliance: Lock in your free membership now
+          .align_center
+            %a.btn.btn-large.btn-success{ :href => "/users/sign_up" } 
+              %i.icon-white.icon-ok
+              Apply for Membership
+            
+        .merchant_body
+          .row.row_spacer
+            .span7
+              %h4.merchant_title Red-Carpet Service
+              %p Increase the flow of patrons to your business. Alliance members will be able to find your business via the alliance search. They will be more inclined to visit an alliance establishment when they go out on the town due to the better experience.
+            .span3.offset1
+              = image_tag "patrons.png", style: "width: 213px; heigh: 213px; border: 1px solid #ddd; padding:10px", class: "img-circle patrons"
+          .row.row_spacer
+            .span3
+              = image_tag "quality.png", style: "width: 213px; heigh: 213px; border: 1px solid #ddd; padding:10px", class: "img-circle patrons"
+            .span7.offset1
+              %h4.merchant_title Something extra at every alliance venue
+              %p Most people go out to restaurants for the experience. Show alliance members that they are garaunteed a good experience and watch your reputation skyrocket.
+          .row.row_spacer
+            .span7
+              %h4.merchant_title A top-notch experience garaunteed
+              %p Treat an alliance member well and they are likely to give you a good review. Well-reviewed alliance establishments are more likely to attract a lot more alliance members. 
+            .span3.offset1
+              = image_tag "happy-chef.png", style: "width: 213px; heigh: 213px; border: 1px solid #ddd; padding:10px", class: "img-circle patrons"
+          .row.row_spacer
+            .span3
+              = image_tag "quality.png", style: "width: 213px; heigh: 213px; border: 1px solid #ddd; padding:10px", class: "img-circle patrons"
+            .span7.offset1
+              %h4.merchant_title Something extra at every alliance venue
+              %p Most people go out to restaurants for the experience. Show alliance members that they are garaunteed a good experience and watch your reputation skyrocket.
+
+          %br
+          %br
+        
+
+= render "shared/footer"

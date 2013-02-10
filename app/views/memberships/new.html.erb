@@ -14,7 +14,8 @@
 				
 				<h2>Apply to become a member of the alliance </h2>
 				<hr>
-				<%= form_for(@membership, :html => { :class => "form-horizontal" }, :validate => true) do |f| %>  <div class="control-group">
+				<%= form_for(@membership, :html => { :class => "form-horizontal" }, :validate => true) do |f| %>  
+				<div class="control-group">
 						<%= f.label :name, "Name", class: "control-label required" %>
 						<div class="controls">
 							<%= f.text_field :name, class: "input-xlarge"  %>

@@ -3,12 +3,13 @@ SandwichAlliance::Application.routes.draw do
   #the following below shouldn't conflict with devise because it is only show, edit, update. 
   resources :users, only: [:index, :show, :edit, :update]
 
+  match "/merchants/thanks" => "merchants#thanks"
+  resources :merchants
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
   root :to => 'home#index'
 
-  match "/merchants" => "home#merchants"
   match "/about" => "home#about"
 
 

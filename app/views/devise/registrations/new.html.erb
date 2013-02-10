@@ -54,7 +54,7 @@
 				  <div class="control-group">
 						<%= f.label :blurb, "A little about you. Please include links to online profiles if you have them (e.g linkedin, personal blog, or other stuff that shows your character).", class: "control-label required" %>
 						<div class="controls">
-							<%= f.text_area :blurb, class: "input-xlarge", rows: 7 %>
+							<%= f.text_area :blurb, class: "input-xlarge text_box", rows: 7 %>
 						</div>
 					</div>
 
@@ -73,7 +73,8 @@
 				  </div>
 				</div>
 				<div style="margin-left:30px;">
-					<span>Free Lifetime Membership if you apply in the next 30 days! Otherwise, yearly dues are $100. It pays to get in early!</span>
+					<span><b>Free Lifetime Membership</b> if you apply in the next 30 days! Otherwise, yearly dues are $100. It pays to get in early!</span>
+					<%= image_tag "limited-offer.png", style: "width:213px; margin-left:80px" %>
 				</div>
 				</div>
 				<hr>

@@ -30,6 +30,7 @@ gem 'jquery-rails'
 gem 'devise'
 gem 'devise-async'
 gem 'client_side_validations'
+gem 'haml'
 
 group :test do
   gem 'capybara'

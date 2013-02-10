@@ -1,0 +1,16 @@
+%a.logo{ :href => "/"} Oak Alliance
+%ul.menu#headnav
+	%li 
+		%a{ :href => "/users/sign_up" } Apply for Membership
+	%li
+		%a{ :href => "/merchants" } Merchants
+	%li 
+		%a{ :href => "/about" } About
+
+	- if user_signed_in?
+		%li.last 
+			= link_to "Logout", destroy_user_session_path, :method => :delete
+	- else
+		%li.last 
+			%a{ :href => "/users/sign_in" } Login
+

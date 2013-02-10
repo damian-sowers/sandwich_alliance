@@ -2,7 +2,6 @@
 $iconSpritePath: image-path('glyphicons-halflings.png');
 $iconWhiteSpritePath: image-path('glyphicons-halflings-white.png');
 @import "bootstrap";
-
 /* ==========================================================================
    HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
    ========================================================================== */
@@ -264,43 +263,63 @@ ul.menu li a:hover{ color: #0ca2d9; } /* Adjust colour of menu links on hover */
    Insert Author's custom styles
    ========================================================================== */
 
-
-
-
-
-
 .circle {
 	margin:0 auto;
 	margin-top:-80px;
 	display:block;width:100px;height:100px;border-radius:66px;border:4px double #ccc;font-size:20px;color:#fff;line-height:100px;text-align:center;text-decoration:none;text-shadow:0 1px 0 #fff;background:#26a3ea; z-index:100;
 }
 
-
-
-
+.article_positioning {
+	margin-top:-40px
+}
+.inner_page_well {
+	background-color:#fff; 
+	margin-top:50px
+}
+.align_center {
+	text-align:center
+}
+.row_spacer {
+	margin-top:60px;
+	margin-left:30px;
+}
+.merchant_title {
+	font-size:24px;
+	font-weight:bold;
+}
+.patrons {
+	transition: transform 1s, background-color 1s;
+  -moz-transition: -moz-transform 1s, background-color 1s;
+  -webkit-transition: -webkit-transform 1s, background-color 1s;
+  -o-transition: -o-transform 1s, background-color 1s;
+}
+.blue_bg {
+	background-color:#26a3ea;
+}
+.page_title {
+	font-size:26px;
+}
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-@media only screen and (min-width: 320px) {
-	.main-container section img{ width: 100%; float: none; padding: 30px 0 0; }
-	.logo { text-align:center; }
-	ul.menu{ top:40px; }
+// @media only screen and (min-width: 320px) {
+// 	.main-container section img{ width: 100%; float: none; padding: 30px 0 0; }
+// 	.logo { text-align:center; }
+// 	ul.menu{ top:40px; }
+// 	.input-xlarge { width:auto }
+// 	.well {width:auto;}
+// 	.text_box { width: 150px;}
 	
-}
-@media only screen and (min-width: 480px) { 
-	.main-container section img{ width: 100%; float: left; max-width: 200px; padding: 40px 20px 40px 0; }
-}
-@media only screen and (min-width: 680px) {
-	.wrapper { width: 90%; margin: 0 5%; }
-	.header-container .wrapper { width: 100%; margin: 0%;  }
-	/*.circle {
-		margin:0 auto;
-		margin-top:-80px;
-		display:block;width:100px;height:100px;border-radius:66px;border:4px double #ccc;font-size:20px;color:#fff;line-height:100px;text-align:center;text-decoration:none;text-shadow:0 1px 0 #fff;background:#26a3ea
-	}*/
-}
-@media only screen and (min-width: 760px) {
+// }
+// @media only screen and (min-width: 480px) { 
+// 	.main-container section img{ width: 100%; float: left; max-width: 200px; padding: 40px 20px 40px 0; }
+// }
+// @media only screen and (min-width: 680px) {
+// 	.wrapper { width: 90%; margin: 0 5%; }
+// 	.header-container .wrapper { width: 100%; margin: 0%;  }
+// }
+@media only screen and (min-width: 10px) {
 	.logo{ position: absolute; top: 60px; left: 5%; z-index: 1000; }
 	ul.menu{ position: absolute; right: 5%; top: 50px; z-index: 1000; }
     .main-container section{ width: 25%; float: left; margin-right: 12%; clear: none; padding-top: 2.2em; }
@@ -311,13 +330,15 @@ ul.menu li a:hover{ color: #0ca2d9; } /* Adjust colour of menu links on hover */
     .footer-container h1{ float: left; }
     .footer-container ul{ float: right; }
     .flexslider2 { margin: 30px 0 90px; padding-top: 80px; }
-	
-}
-@media only screen and (min-width: 870px) { }
-@media only screen and (min-width: 1140px) {
     .wrapper { width: 1040px; /* 1140px - 10% for margins */ margin: 0 auto; }
     .header-container .wrapper { width: 1140px; /* 1140px - 10% for margins */ margin: 0 auto; }
+	
 }
+// @media only screen and (min-width: 870px) { }
+// @media only screen and (min-width: 1140px) {
+//     .wrapper { width: 1040px; /* 1140px - 10% for margins */ margin: 0 auto; }
+//     .header-container .wrapper { width: 1140px; /* 1140px - 10% for margins */ margin: 0 auto; }
+// }
 
 
 
@@ -351,4 +372,3 @@ img { max-width: 100% !important; page-break-inside: avoid; }
 p, h2, h3 { orphans: 3; widows: 3; }
 h2, h3 { page-break-after: avoid; }
 }
-

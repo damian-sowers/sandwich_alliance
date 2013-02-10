@@ -1,0 +1,82 @@
+.header-container
+	%header.wrapper.clearfix
+		#header.internal
+			= render 'shared/header'
+
+.main-container.internal
+	.main.wrapper.clearfix.section
+		.circle_container
+			.circle
+				Apply
+		%article.article_positioning
+			.well.inner_page_well
+				.align_center
+					%h2 Join the network of merchants who are benefiting from the alliance
+					%span Please fill out the following application to apply
+				%hr
+
+				.row.row_spacer
+					.span8
+						= form_for(@merchant, :html => { :class => "form-horizontal" }, :validate => true) do |f|
+
+							.control-group
+								= f.label :first_name, "First Name", class: "control-label" 
+								.controls
+									= f.text_field :first_name, class: "input-xlarge"  
+
+							.control-group
+								= f.label :last_name, "Last Name", class: "control-label" 
+								.controls
+									= f.text_field :last_name, class: "input-xlarge"  
+
+							.control-group
+								= f.label :email, "Email", class: "control-label" 
+								.controls
+									= f.text_field :email, class: "input-xlarge"  
+
+							.control-group
+								= f.label :password, "Password", class: "control-label" 
+								.controls
+									= f.password_field :password, class: "input-xlarge"  
+
+							.control-group
+								= f.label :business_name, "Business Name", class: "control-label" 
+								.controls
+									= f.text_field :business_name, class: "input-xlarge"  
+
+							.control-group
+								= f.label :address1, "Address 1 (your business address)", class: "control-label" 
+								.controls
+									= f.text_field :address1, class: "input-xlarge"  
+
+							.control-group
+								= f.label :address2, "Address2", class: "control-label" 
+								.controls
+									= f.text_field :address2, class: "input-xlarge"  
+
+							.control-group
+								= f.label :state, "State", class: "control-label" 
+								.controls
+									= f.select :state, us_states
+
+							.control-group
+								= f.label :zip, "Zip Code", class: "control-label" 
+								.controls
+									= f.text_field :zip, class: "input-xlarge"  
+
+							.control-group
+								= f.label :business_type, "Business Type (e.g. restaurant, bar, hotel)", class: "control-label" 
+								.controls
+									= f.text_field :business_type, class: "input-xlarge" 
+
+							.control-group
+								= f.label :website_url, "Website URL (if you have a website)", class: "control-label" 
+								.controls
+									= f.text_field :website_url, class: "input-xlarge"  
+
+							= f.submit "Submit Application", class: "btn btn-info"
+
+					.span3
+						= image_tag "happy-chef.png", style: "width: 213px; heigh: 213px; border: 1px solid #ddd; padding:10px", class: "img-circle patrons"
+
+

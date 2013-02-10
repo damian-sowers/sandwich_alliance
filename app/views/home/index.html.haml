@@ -1,0 +1,63 @@
+.header-container
+	%header.wrapper.clearfix
+		#header
+			= render "shared/header"
+			.prevNext
+				%img.prev{ :src => "img/prev.png", :alt => "prev" }
+				%img.next{ :src => "img/next.png", :alt => "next" }
+
+			#sequence
+				%ul 
+					%li
+						%h2.title.three Get Special Treatment at Alliance Bars & Restaurants
+						.subtitle.three
+							This means you will get the best seats in the house, free appetizers, stiffer drinks, etc...
+							%h5 Just need to be a person who represents the values of the alliance
+							%a.btn.btn-success.btn-large{ :href => "/users/sign_up", :style => "margin-left:0" }
+								%i.icon-white.icon-ok
+								Apply for Membership: It's free
+						= image_tag "slide1.png", class: "slide three"
+					%li
+						%h2.title.four An Alliance of Great Service
+						.subtitle.four 
+							Everybody can now enjoy the privelidged experience of extra attention and special offersings.
+							%h5 Apply Today
+							%a.btn.btn-success.btn-large{ :href => "/users/sign_up", :style => "margin-left:0" }
+								%i.icon-white.icon-ok
+								Apply for Membership: It's free
+						= image_tag "slide2.png", class: "slide four"
+			%ul#nav
+				%li
+					%span
+				%li
+					%span
+
+.main-container
+	#features.main.wrapper.clearfix.section
+		%article
+			%section
+				= image_tag "left-image.jpg"
+				%h2 Get the red carpet treatment
+				%p All alliance merchants will give something special to alliance members
+
+			%section
+				= image_tag "middle-image.jpg" 
+				%h2 Search for alliance merchants in your area
+				%p Our beta program is currently starting in the Lake Tahoe Region, but we'll be coming to the Bay Area soon.
+
+			%section.last
+				= image_tag "right-image.jpg"
+				%h2 Be a member of the elite
+				%p A sandwich is the paragon of all things food. Join the alliance which embodies this perfection.
+
+	.main.wrapper.clearfix
+		%header
+			.flexslider2.quote
+				%ul.slides
+					%li "I go to restaurants for the experienc. The alliance gaurantees me a good experience."
+					%li "The chef came out and greeted us, and gave us a complimentary experimental appetizer!"
+					%li "The bartender made my drinks twice as string as everybody else."
+
+= render "shared/footer"
+
+%script{ :src => "/combined.js" }
